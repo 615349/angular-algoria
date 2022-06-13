@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -6,13 +6,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./button.component.css']
 })
 export class ButtonComponent implements OnInit {
-  @Output() onIncrease = new EventEmitter();
+  @Input() buttonText: string = 'Btn';
+  @Input() variant: 'primary' | 'secondary' = 'primary';
+  @Output() handleClick = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
 
   onClick() {
-    this.onIncrease.emit();
+    this.handleClick.emit();
   }
 }

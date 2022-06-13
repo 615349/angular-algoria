@@ -1,2 +1,10 @@
-<p class="counter">Counter: {{counter}}</p>
-<app-button (onIncrease)="increaseCounter()"></app-button>
+<h4 class="counter">Counter: {{counter}}</h4>
+<app-button
+  (handleClick)="increaseCounter()"
+  buttonText="Increase"
+></app-button>
+<app-button
+  (handleClick)="decreaseCounter()"
+  buttonText="Decrease"
+  variant="secondary"
+></app-button>
