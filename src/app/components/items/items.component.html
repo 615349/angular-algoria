@@ -1,1 +1,7 @@
-<p>items works!</p>
+<p>Here is a list of items!</p>
+<ul>
+  <app-item
+    *ngFor="let hit of hits"
+    [hit]="hit"
+  ></app-item>
+</ul>
