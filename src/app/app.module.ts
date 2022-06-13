@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ItemsComponent } from './components/items/items.component';
 import { ItemComponent } from './components/item/item.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CounterComponent } from './components/counter/counter.component';
     HeaderComponent,
     ItemsComponent,
     ItemComponent,
-    CounterComponent
+    CounterComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
